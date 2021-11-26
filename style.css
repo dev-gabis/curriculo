@@ -1,0 +1,50 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    margin: 50px auto;
+    width: 960px;
+    display: grid;
+
+    grid-template-areas: "a b"
+        "c b";
+    grid-template-columns: 360px 1fr;
+    grid-template-rows: 320px 1fr;
+    box-shadow: 0 0 10px  rgb(110, 110, 110);
+    }
+
+#dados-pessoais {
+    background-color: #333;
+    color: #fff;
+    grid-area: a;
+}
+
+#habilidades {
+    background-color: #ccc;
+    grid-area: c;
+}
+
+#experiencias {
+    background-color: #fff;
+    grid-area: b;
+}
+
+@media (max-width: 960px) {
+    main {
+        margin: 0px;
+        width: 100%;
+    }
+
+    @media (max-width: 720px) {
+        main {
+            grid-template-columns: 1fr;
+            grid-template-areas: "a"
+                "c"
+                "b";
+        }
+    }
+}
