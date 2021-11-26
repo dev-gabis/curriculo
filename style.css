@@ -5,11 +5,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1, h2{
+    font-family: 'Lora', serif;
+}
+
 main {
     margin: 50px auto;
     width: 960px;
     display: grid;
-
     grid-template-areas: "a b"
         "c b";
     grid-template-columns: 360px 1fr;
@@ -31,6 +34,7 @@ main {
 #experiencias {
     background-color: #fff;
     grid-area: b;
+    margin: 5%;
 }
 
 @media (max-width: 960px) {
