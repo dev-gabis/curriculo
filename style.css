@@ -20,24 +20,27 @@ main {
     box-shadow: 0 0 10px  rgb(110, 110, 110);
     }
 
+#dados-pessoais,#habilidades,#experiencias{
+    padding: 20px;
+}
 #dados-pessoais {
     background-color: #333;
     color: #fff;
     grid-area: a;
-    padding: 20px;
+    
 }
 
 #habilidades {
     background-color: #ccc;
     grid-area: c;
-    padding: 20px;
+    
 }
 
 #experiencias {
     background-color: #fff;
     grid-area: b;
     margin: 5%;
-    padding: 20px;
+   
 }
 
 @media (max-width: 960px) {
